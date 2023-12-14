@@ -11,7 +11,9 @@ const App = () => {
        <input
        onChange={(e)=>setText(e.target.value)}
        value={text}/>
-       {text.length > 0 ? <p>Hello {text}!</p>: null }
+       {/* below both lines will work */}
+       {/* {text.length > 0 ? <p>Hello {text}!</p>: null } */}
+       {text != ''? <p>Hello {text}!</p>:''}
     </div>
   )
 }
